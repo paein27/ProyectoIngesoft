@@ -65,3 +65,12 @@ class Dispositivos(models.Model):
     class Meta:
         managed = False
         db_table = 'dispositivos'
+
+
+class Peticiones(models.Model):
+    id = models.AutoField(db_column='ID', primary_key=True)  # Field name made lowercase.
+    peticion = models.CharField(db_column='Peticion', max_length=255)  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'peticiones'
