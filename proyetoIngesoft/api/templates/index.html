@@ -30,17 +30,16 @@
             </div>
             <div class="card-body">
               <h5 class="card-title">Not Scrum Master Team</h5>
-              <form>
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Peticion</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escriba la instruccion">
-                    </div>
-                </form>
+              <form method="post" action="{% url 'index' %}">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Peticion</label>
+                    <input type="text" name="peticion" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escriba la instrucción">
+                </div>
                 <button type="submit" class="btn btn-primary" onclick="alert('Peticion Enviada Correctamente');">
                     Enviar
                 </button>
-                  <a href="{% url 'historial' %}" class="btn btn-primary" >Historial</a>
+                <a href="{% url 'historial' %}" class="btn btn-primary">Historial</a>
               </form>
             </div>
           </div>
