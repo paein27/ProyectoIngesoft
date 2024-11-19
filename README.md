@@ -1,6 +1,9 @@
-Not-scrum-master-team
+# Descripcion proyecto
 
-* [Wiki](https://github.com/INF225-2023-2-P201/04-not-scrum-master-team/wiki)
+Interfaz web que permite manejar la configuracion de una red local traduciendo instrucciones de red descritas por el usuario en lenguaje natural (ej: quiero un firewall que no permita la comunicacion del router "x" con router "y") a instrucciones ejecutables por la red (en cisco).
+
+## Link al repositorio completo: [proyecto Ingenieria de Software](https://github.com/INF225-2023-2-P201/04-not-scrum-master-team)  
+  
 
 
 # Instalación de spaCy
